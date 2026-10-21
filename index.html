@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1511">
+  <meta name="description" content="Malu Modas Evangélica: uma seleção de moda modesta feminina, masculina e infantil. Conheça nosso catálogo e faça pedidos pelo WhatsApp.">
+  <meta property="og:title" content="Malu Modas Evangélica | Elegância com propósito">
+  <meta property="og:description" content="Explore o catálogo de moda feminina, masculina e infantil da Malu Modas Evangélica e faça seu pedido pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Malu Modas Evangélica — Elegância com propósito</title>
+  <script defer src="config.js"></script>
+  <script defer src="produtos.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#colecao">Ir para os produtos</a>
+  <div class="announcement" id="inicio">MODA MODESTA PARA TODA A FAMÍLIA <span class="announcement-star">✦</span> ATENDIMENTO PERSONALIZADO</div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Malu Modas Evangélica, página inicial">
+        <img class="brand-logo" src="assets/logo.png" alt="" width="72" height="72">
+        <span class="brand-wordmark"><strong>MALU MODAS</strong><small>TERNOS E MODA EVANGÉLICA</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#colecao" data-sector="Feminino">Feminino</a><a href="#colecao" data-sector="Masculino">Masculino</a><a href="#colecao" data-sector="Infantil">Infantil</a>
+        <a href="#sobre">Nossa essência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="cart-icon-btn" id="openCart" aria-label="Abrir minha sacola">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </button>
+        <button type="button" class="menu-button" id="openMenu" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Menu para celular" hidden>
+      <a href="#inicio">Início</a><a href="#colecao" data-sector="Feminino">Feminino</a><a href="#colecao" data-sector="Masculino">Masculino</a><a href="#colecao" data-sector="Infantil">Infantil</a><a href="#sobre">Nossa essência</a><a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> FEMININO · MASCULINO · INFANTIL</p>
+          <h1>Elegância que <em>expressa</em> quem você é.</h1>
+          <p class="hero-description">Do terno aos vestidos, encontre elegância, qualidade e conforto para cada momento da sua família.</p>
+          <div class="hero-buttons">
+            <a class="button button-dark" href="#colecao">Explorar coleção <span aria-hidden="true">↗</span></a>
+            <button type="button" class="button button-text" data-whatsapp="geral">Fale com a Malu <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="hero-footnote"><span class="tiny-diamond">✧</span> MALU MODAS EVANGÉLICA <span class="divider-hair"></span> QUALIDADE & CONFORTO</div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-outline"></div>
+          <img src="assets/logo.png" alt="Malu Modas — Ternos e Moda Evangélica. Logo dourada e verde sobre fundo preto." width="1080" height="1080" fetchpriority="high">
+          <div class="hero-stamp"><span>BELEZA</span><strong>✳</strong><span>& ESSÊNCIA</span></div>
+          <div class="hero-side-note">ELEGÂNCIA EM CADA DETALHE — ESTILO ATEMPORAL</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features shell" aria-label="Diferenciais do atendimento">
+      <div class="feature"><span class="feature-symbol" aria-hidden="true">✧</span><div><h3>Estilo com propósito</h3><p>Moda que traduz sua essência.</p></div></div>
+      <div class="feature"><span class="feature-symbol" aria-hidden="true">♡</span><div><h3>Escolhas especiais</h3><p>Peças para diferentes momentos.</p></div></div>
+      <div class="feature"><span class="feature-symbol" aria-hidden="true">↗</span><div><h3>Atendimento direto</h3><p>Converse e peça pelo WhatsApp.</p></div></div>
+    </section>
+
+    <section class="catalog-section" id="colecao">
+      <div class="shell">
+        <p class="eyebrow center-eyebrow"><span class="eyebrow-line"></span> DESCUBRA A COLEÇÃO <span class="eyebrow-line"></span></p>
+        <h2 class="section-title">Encante-se com cada <em>detalhe.</em></h2>
+        <p class="section-description">Escolha suas peças favoritas e envie um pedido diretamente para nosso WhatsApp.</p>
+        <p class="demo-notice" id="demoNotice" hidden><span aria-hidden="true">✦</span> Vitrine ilustrativa: produtos e imagens são exemplos. Substitua-os pelas peças reais antes de divulgar a loja.</p>
+        <div class="sector-filters category-filters" id="sectorFilters" aria-label="Filtrar por público"></div>
+        <div class="catalog-controls">
+          <div class="category-filters" id="categoryFilters" aria-label="Filtrar por categoria"></div>
+          <div class="catalog-tools">
+            <label class="search-box"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.5 15.5 5 5"/></svg><input id="searchInput" type="search" placeholder="Buscar peça" aria-label="Buscar peça"></label>
+            <select id="sortSelect" aria-label="Ordenar produtos"><option value="original">Destaques</option><option value="az">Nome A–Z</option><option value="menor">Menor preço</option><option value="maior">Maior preço</option></select>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="no-results" id="noResults" hidden><strong>Nenhuma peça encontrada.</strong><p>Tente pesquisar outro nome ou categoria.</p><button class="button button-outline" type="button" id="clearFilters">Ver todas as peças</button></div>
+        <p class="catalog-footer-note" id="itemCounter"></p>
+      </div>
+    </section>
+
+    <section class="manifesto-section" id="sobre">
+      <div class="shell manifesto-grid">
+        <div class="manifesto-art"><img src="assets/logo.png" alt="Logo Malu Modas" width="1080" height="1080" loading="lazy"></div>
+        <div class="manifesto-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> NOSSA ESSÊNCIA</p>
+          <h2>Mais do que vestir, <em>expressar-se.</em></h2>
+          <p id="aboutCopy">A Malu Modas Evangélica trabalha com roupas modestas, vestuário masculino, infantil e feminino, oferecendo ternos, camisas, gravatas, lenços, casacos, blusas, vestidos e conjuntos. Sempre buscamos atender nossos clientes com qualidade, conforto e dedicação.</p>
+          <p>Na Malu Modas Evangélica, cada escolha é um convite para se sentir elegante sem abrir mão de quem você é.</p>
+          <a class="text-link" href="#colecao">Conheça as peças <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section shell" id="contato">
+      <div class="contact-inner">
+        <p class="eyebrow center-eyebrow">ESTAMOS AQUI PARA VOCÊ</p>
+        <h2>Encontrou sua próxima <em>peça favorita?</em></h2>
+        <p>Fale com a nossa loja para tirar dúvidas, consultar disponibilidade e combinar seu pedido.</p>
+        <div class="contact-actions">
+          <button type="button" class="button button-light" data-whatsapp="geral">Conversar no WhatsApp <span aria-hidden="true">↗</span></button>
+          <a class="button button-instagram" id="contactInstagramLink" href="#contato" hidden target="_blank" rel="noopener noreferrer">Visitar Instagram <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="store-address" id="storeAddress" hidden></p>
+        <span class="contact-caption" id="deliveryNote">Consulte as opções de entrega e retirada pelo WhatsApp.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <a class="brand footer-brand" href="#inicio"><img class="brand-logo" src="assets/logo.png" alt="" width="72" height="72"><span class="brand-wordmark"><strong>MALU MODAS</strong><small>TERNOS E MODA EVANGÉLICA</small></span></a>
+      <p>Moda modesta. Elegância para toda a família.</p>
+      <nav aria-label="Links de rodapé"><a href="#colecao" data-sector="Feminino">Feminino</a><a href="#colecao" data-sector="Masculino">Masculino</a><a href="#colecao" data-sector="Infantil">Infantil</a><a href="#sobre">Nossa essência</a><a href="#contato">Contato</a><a id="instagramLink" href="#contato" hidden target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+    </div>
+    <div class="shell footer-bottom"><span>© <span id="year"></span> Malu Modas Evangélica</span><span>Catálogo online • Pedidos pelo WhatsApp</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <section class="side-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Minha sacola" tabindex="-1" hidden>
+    <div class="drawer-heading"><div><span class="mini-overline">SUAS ESCOLHAS</span><h2>Minha sacola <span id="drawerCount">(0)</span></h2></div><button class="close-btn" type="button" id="closeCart" aria-label="Fechar sacola">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="drawer-footer"><p id="subtotalText" class="subtotal-text"></p><p class="drawer-hint">O pedido será enviado ao WhatsApp para confirmar valores, disponibilidade e entrega.</p><button class="button button-dark full-width" type="button" id="checkoutButton">Enviar pedido no WhatsApp <span aria-hidden="true">↗</span></button><button class="secondary-cart-btn" type="button" id="continueShopping">Continuar escolhendo</button></div>
+  </section>
+
+  <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Detalhes da peça" tabindex="-1" hidden>
+    <button type="button" class="close-btn modal-close" id="closeProduct" aria-label="Fechar detalhes">×</button>
+    <div id="productModalContent"></div>
+  </section>
+
+  <section class="notice-modal" id="noticeModal" role="dialog" aria-modal="true" aria-labelledby="noticeTitle" tabindex="-1" hidden>
+    <button type="button" class="close-btn notice-close" id="closeNotice" aria-label="Fechar aviso">×</button>
+    <span class="notice-icon">✧</span><h2 id="noticeTitle">Pedidos online em breve</h2>
+    <p>O contato de WhatsApp da loja ainda não está disponível neste catálogo.</p>
+    <p>Você pode copiar sua seleção para guardar e consultar a loja depois.</p>
+    <button type="button" class="button button-dark full-width" id="copyPending">Copiar mensagem do pedido</button>
+    <button type="button" class="secondary-cart-btn" id="noticeOk">Entendi</button>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
