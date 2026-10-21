@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-label="Ilustração demonstrativa de Vestido rosé">
+    <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e7d8d5"/><stop offset="1" stop-color="#f8efea"/></linearGradient>
+    <radialGradient id="spot"><stop stop-color="#fff" stop-opacity=".76"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter></defs>
+    <rect width="600" height="760" fill="url(#bg)"/>
+    <circle cx="432" cy="213" r="295" fill="url(#spot)"/><circle cx="100" cy="654" r="240" fill="url(#spot)"/>
+    <path d="M34 32 H566 V728 H34 Z" fill="none" stroke="#544f47" stroke-opacity=".09"/>
+    <ellipse cx="300" cy="680" rx="165" ry="18" fill="#44302a" opacity=".11" filter="url(#shadow)"/>
+    <g transform="translate(0 12)"><path d="M300 95 C280 95 280 127 298 134 Q314 137 315 123" fill="none" stroke="#967a68" stroke-width="5" stroke-linecap="round"/>
+    <path d="M298 135 L244 157 Q300 171 355 157 Z" fill="none" stroke="#967a68" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M248 167 L280 141 Q300 156 319 141 L351 167 Q384 175 403 233 L373 311 L349 300 L344 367 Q373 470 415 647 Q299 676 185 647 Q223 460 256 367 L251 300 L226 311 L196 233 Q210 183 248 167Z" fill="#aa8b90" stroke="#775e63" stroke-width="2"/>
+        <path d="M282 144 Q300 202 319 144" stroke="#775e63" stroke-width="4" fill="none"/>
+        <path d="M248 360 Q300 378 352 360" stroke="#775e63" stroke-width="13" opacity=".42"/>
+        <path d="M273 390 Q247 534 218 636 M325 390 Q344 533 381 640" stroke="#fff" stroke-width="7" opacity=".18" fill="none"/>
+        <path d="M234 317 Q220 257 207 240 M366 316 Q380 255 390 240" stroke="#fff" stroke-width="5" opacity=".19" fill="none"/></g>
+    <text x="300" y="714" font-family="Georgia,serif" font-size="14" text-anchor="middle" letter-spacing="5" fill="#61554e" opacity=".48">MALU MODAS</text>
+    </svg>
