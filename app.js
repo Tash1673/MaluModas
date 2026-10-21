@@ -116,7 +116,7 @@
     $('subtotalText').textContent=priced?'Subtotal estimado: '+fmt(cart.reduce((t,i)=>t+findProduct(i.id).preco*i.qty,0)):'Valores a confirmar pelo WhatsApp';
   }
   function buildOrderText(){
-    let lines=['Olá! Gostaria de fazer um pedido na Malu Modas Evangélica. ✨','','*Meu pedido:*'];
+    let lines=['Olá! Gostaria de fazer um pedido na Malu Modas Evangélica.','','*Meu pedido:*'];
     cart.forEach((i,n)=>{
       const p=findProduct(i.id);
       if(!p)return;
