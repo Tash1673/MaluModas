@@ -48,7 +48,7 @@
   function WhatsApp(message) {
     const phone = getPhone();
     if (!phone) { pendingOrderText = message; openPanel('noticeModal'); return; }
-    window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
+    window.location.assign('https://wa.me/'+phone+'?text='+encodeURIComponent(message));
   }
   function cartCount(){return cart.reduce((total,i)=>total+i.qty,0);}
   function getCategories(){return ['Todas', ...new Set(products.filter(p=>activeSector==='Todos'||p.setor===activeSector).map(p=>p.categoria))];}
@@ -154,6 +154,10 @@
     try {document.execCommand('copy');toast('Mensagem copiada!');}catch(_){toast('Não foi possível copiar automaticamente.');}finally{area.remove();}
   }
   function updateTemplate(){
+    const phone = getPhone();
+    document.querySelectorAll('a[data-whatsapp]').forEach(link=>{
+      link.href=phone?'https://wa.me/'+phone+'?text='+encodeURIComponent('Olá! Gostaria de conhecer as peças da Malu Modas Evangélica.'):'#contato';
+    });
     $('year').textContent=String(new Date().getFullYear());
     $('demoNotice').hidden=!config.demonstracao;
     if(config.sobre)$('aboutCopy').textContent=config.sobre;
@@ -184,7 +188,10 @@
       option.classList.add('selected');option.setAttribute('aria-pressed','true');return;
     }
     const wh=event.target.closest('[data-whatsapp]');
-    if(wh){WhatsApp('Olá! Gostaria de conhecer as peças da Malu Modas Evangélica.');return;}
+    if(wh){
+      if(!getPhone()){event.preventDefault();WhatsApp('Olá! Gostaria de conhecer as peças da Malu Modas Evangélica.');}
+      return;
+    }
     const cartQty=event.target.closest('[data-cart-qty]');
     if(cartQty){
       const index=Number(cartQty.dataset.cartQty),delta=Number(cartQty.dataset.qtyDelta);
