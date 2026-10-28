@@ -25,6 +25,27 @@ window.MALU_PRODUTOS = [
     "setor": "Feminino"
   },
   {
+    "id": "MM-009",
+    "nome": "Vestido Dourado de Dança",
+    "categoria": "Vestidos",
+    "preco": "600,00",
+    "imagem": "assets/pecas/elegante-vestido-de-danca-dourado-hiper-realista-hd-vestido-de-noite-amarelo_899449-208055-2155466595.jpg",
+    "destaque": "Exemplo",
+    "descricao": "Modelo ilustrativo para demonstrar como uma peça aparecerá no catálogo.",
+    "tamanhos": [
+      "P",
+      "M",
+      "G",
+      "GG"
+    ],
+    "cores": [
+      "Rosé",
+      "Bege"
+    ],
+    "disponivel": true,
+    "setor": "Feminino"
+  },
+  {
     "id": "MM-002",
     "nome": "Vestido Longo Rosé",
     "categoria": "Vestidos",
